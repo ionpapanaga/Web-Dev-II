@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Showdown 2026 | Esports Tournament</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">NEXUS<span>CLASH</span></div>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#faq">Rules</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>The Ultimate University Esports Clash</h1>
+      <p>Compete, dominate, and claim the prize pool on November 15, 2026.</p>
+      <a href="#register" class="btn primary-btn">Join Tournament</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Featured Games Section (Grid) -->
+    <section id="games" class="content-section">
+      <h2>Featured Tournaments</h2>
+      <div class="games-grid">
+        <article class="card">
+          <img src="https://placehold.co/400x220/222/e10600?text=Valorant" alt="Valorant tactical shooter banner">
+          <h3>Valorant (5v5)</h3>
+          <p>Bracket elimination. Double-elimination format from Quarterfinals onward.</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x220/222/00b4d8?text=Rocket+League" alt="Rocket league vehicle soccer banner">
+          <h3>Rocket League (3v3)</h3>
+          <p>Standard Soccar mode. Best of 5 series up to the Grand Finals.</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x220/222/ffb703?text=Smash+Bros" alt="Super Smash Bros fighter banner">
+          <h3>Super Smash Bros. (1v1)</h3>
+          <p>3 Stocks, 7 minutes. Hazardless competitive stage list enabled.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Schedule Section (Flexbox) -->
+    <section id="schedule" class="content-section">
+      <h2>Tournament Schedule</h2>
+      <div class="schedule-list">
+        <div class="schedule-item">
+          <span class="time">10:00 AM</span>
+          <span class="event-desc">Check-in & Technical Warmup</span>
+        </div>
+        <div class="schedule-item">
+          <span class="time">11:30 AM</span>
+          <span class="event-desc">Group Stages & Qualifiers</span>
+        </div>
+        <div class="schedule-item">
+          <span class="time">03:00 PM</span>
+          <span class="event-desc">Semifinals Broadcast</span>
+        </div>
+        <div class="schedule-item">
+          <span class="time">06:00 PM</span>
+          <span class="event-desc">Grand Finals & Awards</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules & FAQ (Interactive target for JS) -->
+    <section id="faq" class="content-section">
+      <h2>Rules & FAQ</h2>
+      <div class="faq-container">
+        <div class="faq-card">
+          <button class="faq-question">Who is eligible to participate?</button>
+          <div class="faq-answer">
+            <p>Any enrolled student can register. Cross-university teams are allowed in team brackets.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button class="faq-question">What equipment do I need to bring?</button>
+          <div class="faq-answer">
+            <p>Peripherals (controllers, mice, keyboards, headsets) are BYOD. Monitors and consoles/PCs are provided.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button class="faq-question">Is there an entry fee?</button>
+          <div class="faq-answer">
+            <p>Entry is completely free for all verified student brackets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="content-section register-section">
+      <h2>Player Registration</h2>
+      <form id="regForm">
+        <div class="form-group">
+          <label for="gamertag">Player GamerTag</label>
+          <input type="text" id="gamertag" placeholder="e.g. Phoenix_01" required>
+        </div>
+        <div class="form-group">
+          <label for="gameSelect">Select Game</label>
+          <select id="gameSelect" required>
+            <option value="">-- Choose Game --</option>
+            <option value="Valorant">Valorant (5v5)</option>
+            <option value="Rocket League">Rocket League (3v3)</option>
+            <option value="Smash Bros">Super Smash Bros (1v1)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">Student Email</label>
+          <input type="email" id="email" placeholder="student@university.ac.uk" required>
+        </div>
+        <button type="submit" class="btn primary-btn submit-btn">Confirm Entry</button>
+      </form>
+      <div id="formFeedback" class="feedback-banner" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Nexus Clash Tournament. Organised for Web Dev II.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
